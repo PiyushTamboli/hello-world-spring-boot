@@ -21,9 +21,8 @@ stages:
       vmImage: ubuntu-latest
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build and Push
       inputs:
-        command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        tags: |
-          $(tag)
+        command: buildAndPush
+        containerRegistry: myServiceConnection
+        repository: piyushtamboli/az-docker
