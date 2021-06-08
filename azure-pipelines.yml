@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-  tag: '$(Build.BuildId)'
+  tag: 'maven.spring.boot.hello.world.$(Build.BuildId)'
 
 stages:
 - stage: Build
