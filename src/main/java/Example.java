@@ -12,7 +12,7 @@ public class Example {
         return "Hello World - v3!";
     }
     
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     String home2() {
         return "Hello World - v4!";
     }
