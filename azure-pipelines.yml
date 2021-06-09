@@ -24,5 +24,5 @@ stages:
       displayName: Build and Push
       inputs:
         command: buildAndPush
-        containerRegistry: myServiceConnection
-        repository: piyushtamboli/az-docker
+        containerRegistry: pkMyCntnrRgstry
+        repository: az-docker
